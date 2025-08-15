@@ -1,3 +1,4 @@
+
 /* General resets */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,6 +7,57 @@ body {
   background-color: #f9f9f9;
   margin: 0;
   padding: 0;
+}
+
+/* Consistent background for certificate page */
+body.certificate-bg {
+  background: #0a0e1a !important;
+  color: #fff;
+}
+
+.certificate-main {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.certificate-main figure {
+  margin: 0;
+  text-align: center;
+}
+
+.certificate-main img {
+  max-width: 100%;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px rgba(39,166,255,0.18);
+  border: 2px solid #27a6ff;
+}
+
+.certificate-main figcaption {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #27a6ff;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .certificate-main {
+    max-width: 98vw;
+    padding: 0.5rem;
+  }
+  .certificate-main img {
+    border-radius: 10px;
+  }
+  .certificate-main figcaption {
+    font-size: 1rem;
+  }
 }
 
 .container {
